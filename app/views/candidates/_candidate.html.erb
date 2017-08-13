@@ -1,0 +1,14 @@
+<tr>
+
+<td> <%= link_to "投！", vote_candidate_path(candidate), method: "post", data: {confirm: "sure?"}, class:"btn btn-success" %></td>
+<td> <%= candidate.name %></td>
+<td> <%= candidate.age %> / <%= gender_p(candidate.gender) %></td>
+<td> <%= candidate.politics %></td>
+<td> <%= candidate.vote_logs.size %></td>
+<td> <%= link_to "edit", edit_candidate_path(candidate), class:"btn btn-warning"%></td>
+
+<td> <%= link_to "show", candidate_path(candidate), class:"btn btn-default" %></td>
+<td> <%= link_to "destroy", candidate_path(candidate) , method: "delete", data: { confirm: "sure?" }, class:"btn btn-danger" %></td>
+
+
+</tr>

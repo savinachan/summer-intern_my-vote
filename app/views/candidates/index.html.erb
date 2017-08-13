@@ -1,0 +1,23 @@
+<h1>List</h1>
+
+<%= link_to "new", new_candidate_path, class:"btn btn-info" %>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <td>vote !</td>
+        <td>name</td>
+        <td>age / gender</td>
+        <td>politics</td>
+        <td>vote-num</td>
+        <td>tool</td>
+      </tr>
+    </thead>
+    <tbody>
+
+     <%= render partial: "candidate", collection: @candidates %>
+
+    </tbody>
+  </table>
+
+

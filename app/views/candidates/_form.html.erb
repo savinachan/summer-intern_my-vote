@@ -1,0 +1,20 @@
+	<%= form_for candidate do |f| %>
+
+  <%= f.label :name, "姓名" %>
+  <%= f.text_field :name %> <br />
+
+ 	<%= f.label :age, "年齡" %>
+  <%= f.text_field :age %> <br /> 
+
+  <%= f.label :gender, "性別" %>
+  <%= f.text_field :gender %> <br />
+
+  <%= f.label :politics, "政見" %>
+  <%= f.text_area :politics %> <br />
+
+  <%= f.submit class:"btn btn-warning" %>
+
+
+<%= link_to 'back', candidates_path, class:"btn btn-info"%>
+	
+<% end %>
